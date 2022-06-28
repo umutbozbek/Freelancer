@@ -1,0 +1,47 @@
+
+<%- include('partials/_header') %>
+<%- include('partials/_navigation') %>
+
+<section class="page-section" id="contact">
+    <div class="container">
+        <!-- Contact Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">ADD</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                    <form id="contactForm"  action="/add" method="POST" enctype="multipart/form-data">
+                        <!-- Name input-->
+                        
+                        <div class="form-group mb-md-0">
+                            <input class="form-control" id="name" type="text" placeholder="Name" name="name" />
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Image input-->
+
+                                <input type="file" name="image" class="form-control-file rounded-0">
+                                <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
+                                <!-- <button type="submit" class="btn btn-primary rounded-0 d-block ml-auto mr-0 tm-btn-animate tm-btn-submit tm-icon-submit"><span>Submit</span></button> -->
+                        </div>
+
+                      
+                    
+                    </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include('partials/_footer') %>
